@@ -1,0 +1,284 @@
+.cartel {
+    background-color: lightblue;
+}
+
+.cartel__pedido {
+    color: black;
+}
+
+.cartel__buscador--color {
+    color: black;
+}
+
+.final__contacto--color {
+    color: black;
+}
+
+.pushbarCarrito {
+    width: 30%!important;
+}
+
+.tituloCarrito {
+    padding-bottom: 5%;
+}
+
+.imgCarrito {
+    padding: 0!important;
+    margin: 0;
+    grid-area: imgCarrito;
+    width: 100%;
+}
+
+.listaProductos {
+    display: grid;
+    list-style: none;
+    grid-template-areas: "imgCarrito nombreCarrito cantidadCarrito precioCarrito sumarCarrito restarCarrito";
+    grid-template-rows: auto;
+    grid-auto-columns: 20% 16% 16% 16% 16%;
+    align-items: center;
+    border-bottom: 1px solid rgba(112, 112, 112, 60);
+}
+
+.nombreCarrito {
+    grid-area: nombreCarrito;
+    width: 100%;
+    text-align: center;
+}
+
+.cantidadCarrito {
+    grid-area: cantidadCarrito;
+    width: 100%;
+}
+
+.precioCarrito {
+    grid-area: precioCarrito;
+    width: 100%;
+}
+
+.sumarCarrito {
+    grid-area: sumarCarrito;
+    width: 100%;
+}
+
+.restarCarrito {
+    grid-area: restarCarrito;
+    width: 100%;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.textoProd {
+    display: flex;
+    justify-content: center;
+}
+
+.cartelPedidos {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.tituloProductos {
+    text-align: center;
+    font-family: "Style script", cursive;
+}
+
+.filasTotal {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto {
+    text-align: center;
+    font-family: "Style script", cursive;
+}
+
+.final__estilo {
+    font-size: 11px;
+}
+
+.final__redes {
+    list-style: none;
+    padding: 0;
+}
+
+.listadoPreguntas {
+    list-style: none;
+    padding: 3%;
+}
+
+.estilocontacto {
+    font-family: "Style script", cursive;
+}
+
+.logo__tamano {
+    width: 25%;
+}
+
+.tamanioLogoIg {
+    width: 30%;
+}
+
+.scale {
+    width: 100%;
+}
+
+.final__redes--tamano {
+    font-size: 75%;
+}
+
+.textojenny {
+    font-size: 25px;
+}
+
+.gridGaleria {
+    display: grid;
+    grid-template-areas: "imgProd1 imgProd2 imgProd3" "imgProd4 imgProd5 imgProd6";
+    grid-template-rows: auto auto;
+    grid-auto-columns: auto auto auto;
+}
+
+.imgProd1 {
+    grid-area: imgProd1;
+    width: 30%;
+}
+
+.imgProd2 {
+    grid-area: imgProd2;
+    width: 30%;
+}
+
+.imgProd3 {
+    grid-area: imgProd3;
+    width: 30%;
+}
+
+.imgProd4 {
+    grid-area: imgProd4;
+    width: 30%;
+}
+
+.imgProd5 {
+    grid-area: imgProd5;
+    width: 30%;
+}
+
+.imgProd6 {
+    grid-area: imgProd6;
+    width: 30%;
+}
+
+.textoEmpleados {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+label.error {
+    color: red;
+}
+
+.textoEmail {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: small;
+    text-decoration: none;
+}
+
+.listaEmpleados {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    flex-shrink: 2;
+    justify-content: center;
+    list-style: none;
+}
+
+.listaProd {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    flex-shrink: 2;
+    justify-content: center;
+    list-style: none;
+}
+
+.barraProd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.imgProd {
+    width: 200px;
+}
+
+.zoom {
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.zoom:hover img {
+    transform: scale(2);
+    transition: all .2s linear;
+}
+
+.logoIg {
+    width: 100%;
+    justify-content: center;
+}
+
+.jenny {
+    width: 100%;
+}
+
+ul li a {
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+ul li a.cart:hover {
+    text-decoration: none;
+    color: #d60e96;
+}
+
+ul li a.cart .cart-basket {
+    font-size: .6rem;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    background-color: #418deb;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .logoIg {
+        width: 100%;
+        justify-content: center;
+    }
+    .tamanioLogoIg {
+        width: 50%;
+    }
+    .final__redes {
+        text-align: center;
+        padding: 0;
+    }
+    .pushbarCarrito {
+        width: 90%!important;
+    }
+}
