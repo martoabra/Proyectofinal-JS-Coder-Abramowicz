@@ -191,6 +191,6 @@ obtenerDatos();
 
 //boton de ingreso al sitio
 $("#botonIndex").click(() => {
-    location.href = '../pages/home.html';
+    location.href = './pages/home.html';
 
 });
