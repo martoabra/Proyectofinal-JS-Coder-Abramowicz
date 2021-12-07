@@ -155,7 +155,7 @@ $(".btnFin").click(() => {
         }).then((result) => {
 
             if (result.dismiss === Swal.DismissReason.timer) {
-                location.href = '../pages/index.html';
+                location.href = '../pages/home.html';
                 borrarCarrito();
                 borrarCarrito();
                 borrarCarrito();
@@ -188,3 +188,9 @@ function obtenerDatos() {
 }
 
 obtenerDatos();
+
+//boton de ingreso al sitio
+$("#botonIndex").click(() => {
+    location.href = '../pages/home.html';
+
+});
