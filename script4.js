@@ -107,17 +107,22 @@ $("#formularioContacto").validate({
 
 //Enviar es el nombre del boton submit en el formulario de contacto
 $("#enviar").click(function() {
-    if ($("#formularioContacto").val() == false) {
-        return;
 
+        let nombres = $("#nombres").val()
+        let mail = $("#mail").val()
+        let tipoSolicitud = $("#tipo_solicitud").val()
+        let mensaje = $("#mensaje").val()
+        let newsletter = $("#avisos").is(":checked")
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Gracias por tu mensaje! En breve te contactaremos',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
-    let nombres = $("#nombres").val()
-    let mail = $("#mail").val()
-    let tipoSolicitud = $("#tipo_solicitud").val()
-    let mensaje = $("#mensaje").val()
-    let newsletter = $("#avisos").is(":checked")
 
-});
+);
 
 
 //Al presionar seguir comprando nos lleva otra vez a la pagina de productos
@@ -191,6 +196,6 @@ obtenerDatos();
 
 //boton de ingreso al sitio
 $("#botonIndex").click(() => {
-    location.href = '../pages/home.html';
+    location.href = './pages/home.html';
 
 });
